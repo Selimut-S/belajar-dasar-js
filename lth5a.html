@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soal: buat kondisi dimana angkot 8 dan 10 sedang lembur</title>
+  </head>
+  <body>
+    <!-- syntax dasar else if -->
+    <!-- if (kondisi) {
+        // blok kode jika kondisi bernilai true
+      } else if (kondisi lain) {
+        // blok kode jika kondisi lain bernilai true
+      } else {
+        // blok kode jika semua kondisi bernilai false
+      } -->
+    <script>
+      // let angkka = prompt("masukan angka : ");
+      // angkka = parseInt(angkka);
+      //   parseInt() digunakan untuk mengubah tipe data string menjadi number, karena prompt akan menghasilkan tipe data string, maka kita harus mengubahnya menjadi number agar bisa dilakukan operasi matematika seperti modulus
+
+      // if (angkka % 2 === 0) {
+      //   alert("angka adalah bilangan genap");
+      // } else if (angkka % 2 === 1) {
+      //   alert("angka adalah bilangan ganjil");
+      // } else {
+      //   alert("anda tidak memasukan angka, atau bukan angka yang anda masukan");
+      // }
+      //   simbol % disebut dengan modulus atau sisa bagi, jadi jika angka dibagi 2 dan sisanya 0 maka angka tersebut adalah bilangan genap, jika sisanya 1 maka angka tersebut adalah bilangan ganjil, jika tidak memasukan angka maka akan muncul pesan "anda tidak memasukan angka"
+
+      // soal: buat kondisi dimana angkot 8 dan 10 sedang lembur
+
+      let jlmhAngkot = 10;
+      let angkotBeroperasi = 6;
+
+      // jawaban 1
+      console.log("JAWABAN 1");
+
+      for (let noAngkot = 1; noAngkot <= jlmhAngkot; noAngkot++) {
+        if (noAngkot <= 6) {
+          console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+        } else if (noAngkot === 8) {
+          console.log("Angkot No. " + noAngkot + " sedang lembur.");
+        } else if (noAngkot === 10) {
+          console.log("angkot No. " + noAngkot + " sedang lembur.");
+        } else {
+          console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.");
+        }
+      }
+
+      // jawaban 2
+      console.log("JAWABAN 2");
+
+      for (let noAngkot = 1; noAngkot <= jlmhAngkot; noAngkot++) {
+        if (noAngkot <= 6) {
+          console.log("Angkot No. " + noAngkot + " beroperasi dengan baik.");
+        } else if (noAngkot === 8 || noAngkot === 10) {
+          console.log("Angkot No. " + noAngkot + " sedang lembur.");
+        } else {
+          console.log("Angkot No. " + noAngkot + " sedang tidak beroperasi.");
+        }
+      }
+    </script>
+  </body>
+</html>
